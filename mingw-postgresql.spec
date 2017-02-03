@@ -2,7 +2,7 @@
 
 Name:           mingw-postgresql
 Version:        9.6.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        MinGW Windows PostgreSQL library
 
 License:        PostgreSQL
@@ -208,6 +208,9 @@ mv $RPM_BUILD_ROOT%{mingw64_libdir}/libpq.a $RPM_BUILD_ROOT%{mingw64_libdir}/lib
 
 
 %changelog
+* Fri Feb 03 2017 Jajauma's Packages <jajauma@yandex.ru> - 9.6.1-2
+- Rebuild with GCC 5.4.0
+
 * Thu Dec 01 2016 Michael Cronenworth <mike@cchtml.com> - 9.6.1-1
 - New upstream release.
 
